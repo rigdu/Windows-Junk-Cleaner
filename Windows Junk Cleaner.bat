@@ -1,8 +1,11 @@
+echo WARNING: This will delete temporary files permanently. Continue? (Y/N)
+set /p choice=Type Y to continue or N to cancel:
+if /i "%choice%" NEQ "Y" exit
 @echo off
 cls
-TITLE Windows®SystemJunkCleaner v1.0 (C) 2010
+TITLE WindowsÂ®SystemJunkCleaner v1.0 (C) 2010
 echo.
-echo Windows®SystemJunkCleaner
+echo WindowsÂ®SystemJunkCleaner
 echo.
 echo This batch script is provided as is without warranty.
 echo.
@@ -35,5 +38,5 @@ del /f /s /q %windir%\SoftwareDistribution\Download\*.*
 rd /s /q "%userprofile%\Local Settings\Temp\" & md "%userprofile%\Local Settings\Temp\" 
 rd /s /q %windir%\Temp & md %windir%\Temp
 echo.
-echo process ended Windows®SystemJunkCleaner
+echo process ended WindowsÂ®SystemJunkCleaner
 echo.
